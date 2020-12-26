@@ -5,7 +5,6 @@ import React, { useEffect, useState } from 'react'
 import { Card, Form, InputGroup } from 'react-bootstrap'
 import { Trans, useTranslation } from 'react-i18next'
 
-import CopyToSpreadsheetButton from './CopyToSpreadsheetButton'
 import { ControlledExpandable } from 'components/Expandable'
 import {
   CalculatorData,
@@ -330,7 +329,6 @@ export const PrevalenceControls: React.FunctionComponent<{
                 {PrevalenceDataDate}
               </em>
             </div>
-            <CopyToSpreadsheetButton data={data} />
             <div>
               <p className="mt-3">
                 <Trans i18nKey="calculator.prevalence_info_source_information">
